@@ -1,0 +1,1 @@
+export { compileFromContentTypes } from './generator';
