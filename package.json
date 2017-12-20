@@ -1,6 +1,6 @@
 {
   "name": "content-type-to-typescript",
-  "version": "0.0.0-development",
+  "version": "0.0.0-development.0",
   "description": "",
   "keywords": [],
   "main": "dist/content-type-to-typescript.es5.js",
