@@ -1,145 +1,39 @@
 # Content-type-to-typescript
 
-This is a library to convert Contentful Content Types to the TS Definitions.
+This is a tool to convert Contentful Models (Content Types) to the TS Definitions.
+Provides a way to automate TS Definitions generation. Could be used as a library or cli tool.
 
-## Example
 
-Input:
-
-```json
-{
-  "name": "Category",
-  "description": null,
-  "displayField": "title",
-  "fields": [
-    {
-      "id": "title",
-      "name": "Title",
-      "type": "Text",
-      "localized": false,
-      "required": true,
-      "validations": [],
-      "disabled": false,
-      "omitted": false
-    },
-    {
-      "id": "icon",
-      "name": "Icon",
-      "type": "Link",
-      "localized": false,
-      "required": false,
-      "validations": [],
-      "disabled": false,
-      "omitted": false,
-      "linkType": "Asset"
-    },
-    {
-      "id": "categoryDescription",
-      "name": "Description",
-      "type": "Text",
-      "localized": false,
-      "required": false,
-      "validations": [],
-      "disabled": false,
-      "omitted": false
-    },
-    {
-      "id": "simpleTextField",
-      "name": "Simple text field",
-      "type": "Symbol",
-      "localized": true,
-      "required": false,
-      "validations": [],
-      "disabled": false,
-      "omitted": false
-    }
-  ],
-  "sys": {
-    "space": {
-      "sys": {
-        "type": "Link",
-        "linkType": "Space",
-        "id": "vu21149elxz0"
-      }
-    },
-    "id": "6XwpTaSiiI2Ak2Ww0oi6qa",
-    "type": "ContentType",
-    "createdAt": "2017-10-02T14:42:27.014Z",
-    "updatedAt": "2017-11-15T09:47:53.743Z",
-    "createdBy": {
-      "sys": {
-        "type": "Link",
-        "linkType": "User",
-        "id": "6mAdPrXPkyREm4vMnIbdQ8"
-      }
-    },
-    "updatedBy": {
-      "sys": {
-        "type": "Link",
-        "linkType": "User",
-        "id": "6mAdPrXPkyREm4vMnIbdQ8"
-      }
-    },
-    "publishedCounter": 3,
-    "version": 6,
-    "publishedBy": {
-      "sys": {
-        "type": "Link",
-        "linkType": "User",
-        "id": "6mAdPrXPkyREm4vMnIbdQ8"
-      }
-    },
-    "publishedVersion": 5,
-    "firstPublishedAt": "2017-10-02T14:42:27.614Z",
-    "publishedAt": "2017-11-15T09:47:53.743Z"
-  }
-}
-```
-
-Output:
-
-```ts
-export interface AssetLink {
-  type: string;
-  linkType: string;
-  id: string;
-}
-
-export interface Category {
-  title: string;
-  icon?: AssetLink;
-  categoryDescription?: string;
-  simpleTextField?: string;
-}
-```
 
 ## Installation
 
 ```
-npm install content-type-to-typescript --save
+$ npm install content-type-to-typescript --save
 ```
 
 ## Usage
 
-1. Using [contentful.js](https://github.com/contentful/contentful.js)
+1. As CLI 
 
-```js
-const { createClient } = require('contentful');
-const { compileFromContentTypes } = require('content-type-to-typescript');
-
-const client = createClient({
-    accessToken: ACCESS_TOKEN,
-    space: SPACE_ID,
-  });
-
-const contentTypes = await client.getContentTypes();
-
-const typings = await compileFromContentTypes(contentTypes.items);
-
-console.log(typings);
+```
+$ ./node_modules/.bin/content-type-typescript --access-token <token> --space <space> --output <filepath>
 ```
 
-2. Using JSON preview
+This command will generate TS Definition file. Could also be used as a npm script.
+
+package.json:
+```json
+"scripts": {
+  "sync-contentful-types": "content-type-typescript --access-token <token> --space <space> --output <filepath>"
+}
+```
+Usage:
+
+```
+npm run sync-contentful-types
+```
+
+2. As a library using JSON preview from Web App
 
 Copy JSON Preview from [Contentful Web App](https://app.contentful.com/)
 
@@ -149,16 +43,12 @@ import { compileFromContentTypes } from 'content-type-to-typescript';
 const category = {
     name: 'Category',
     description: null,
-    displayField: 'title',
     fields: [
       {
         id: 'title',
         name: 'Title',
         type: 'Text',
-        localized: false,
         required: true,
-        validations: [],
-        disabled: false,
         omitted: false,
       },
     ],
@@ -186,6 +76,67 @@ The structure of the Content Type is described here [Contentful data model](http
 | :------------ | :----- | :-------: | :----------------------------------- |
 | bannerComment | String |           | A comment at the top of the response |
 
+
+
+## Example
+
+Input:
+
+```json
+{
+  "name": "Category",
+  "fields": [
+    {
+      "id": "title",
+      "name": "Title",
+      "type": "Text",
+      "required": true,
+      "omitted": false
+    },
+    {
+      "id": "icon",
+      "name": "Icon",
+      "type": "Link",
+      "required": false,
+      "omitted": false,
+      "linkType": "Asset"
+    },
+    {
+      "id": "categoryDescription",
+      "name": "Description",
+      "type": "Text",
+      "required": false,
+      "omitted": false
+    },
+    {
+      "id": "simpleTextField",
+      "name": "Simple text field",
+      "type": "Symbol",
+      "required": false,
+      "validations": [],
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}
+```
+
+Output:
+
+```ts
+export interface Category {
+  title: string;
+  icon?: AssetLink;
+  categoryDescription?: string;
+  simpleTextField?: string;
+}
+
+export interface AssetLink {
+  type: string;
+  linkType: string;
+  id: string;
+}
+```
 ## Built with
 
 * [json-schema-to-typescript](https://github.com/bcherny/json-schema-to-typescript/)

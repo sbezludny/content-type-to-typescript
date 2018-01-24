@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "dist/content-type-to-typescript.es5.js",
+  "bin": "dist/bin/content-type-to-typescript",
   "typings": "dist/types/content-type-to-typescript.d.ts",
   "files": [
     "dist"
@@ -27,11 +28,12 @@
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
     "prepush": "npm run test:prod && npm run build",
-    "commitmsg": "validate-commit-msg"
+    "commitmsg": "validate-commit-msg",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -95,16 +97,19 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript": "^0.8.1",
-    "semantic-release": "^8.2.0",
+    "semantic-release": "^12.2.4",
     "ts-jest": "^21.0.0",
     "ts-node": "^4.0.1",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.1.0",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.3.4",
-    "validate-commit-msg": "^2.12.2"
+    "validate-commit-msg": "^2.12.2",
+    "travis-deploy-once": "^4.3.2"
   },
   "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "^2.13.0",
     "contentful": "^5.0.5",
     "json-schema-to-typescript": "^5.2.2",
     "lodash": "^4.17.4"

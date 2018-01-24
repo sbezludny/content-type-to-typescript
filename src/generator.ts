@@ -1,6 +1,6 @@
 import { ContentType, Field } from 'contentful/index';
 import { compile, Options } from 'json-schema-to-typescript';
-import { chain, defaults, fromPairs, get } from 'lodash';
+import { chain, defaults, fromPairs, get, orderBy } from 'lodash';
 import { buildRef, getByRef } from './built-in-definitions';
 import { convertToJSONSchema } from './parser';
 import { JSONSchema } from './types/json-schema';
@@ -8,8 +8,7 @@ import { JSONSchema } from './types/json-schema';
 const BANNER_COMMENT = `/**
 * This file was automatically generated.
 * DO NOT MODIFY IT BY HAND.
-*/
-`;
+*/`;
 
 export async function compileFromContentTypes(
   contentTypes: Array<Partial<ContentType>>,
@@ -60,5 +59,7 @@ function includeRequiredDefinitions(definitions: JSONSchema[]): JSONSchema[] {
     .flatten()
     .value();
 
-  return requiredBuiltInDefinitions.concat(definitions);
+  const alphabetizedDefinitions = orderBy(definitions, ['title'], ['asc']);
+
+  return alphabetizedDefinitions.concat(requiredBuiltInDefinitions);
 }

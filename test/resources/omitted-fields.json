@@ -1,0 +1,27 @@
+{
+  "name": "Model With Omitted Field",
+  "description": null,
+  "displayField": "singleLine",
+  "fields": [
+    {
+      "id": "singleLine",
+      "name": "Single Line",
+      "type": "Text",
+      "localized": false,
+      "required": false,
+      "validations": [],
+      "disabled": false,
+      "omitted": true
+    },
+    {
+      "id": "multipleLine",
+      "name": "Multiple Line",
+      "type": "Text",
+      "localized": false,
+      "required": false,
+      "validations": [],
+      "disabled": false,
+      "omitted": false
+    }
+  ]
+}

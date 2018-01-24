@@ -73,6 +73,7 @@ function fieldToJsonSchema(fieldInfo: Field): any {
 
 function transformFields(contentTypeInfo: Partial<ContentType>): JSONSchema {
   const properties = chain(contentTypeInfo.fields)
+    .filter((fieldInfo) => !fieldInfo.omitted)
     .map((fieldInfo) => [fieldInfo.id, fieldToJsonSchema(fieldInfo)])
     .fromPairs()
     .value();

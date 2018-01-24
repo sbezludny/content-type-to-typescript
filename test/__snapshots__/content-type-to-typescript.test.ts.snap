@@ -1,33 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link not required 1`] = `
-"/**
- * This file was automatically generated.
- * DO NOT MODIFY IT BY HAND.
- */
-
-
-export interface AssetLink {
-  /**
-   * Link
-   */
-  type: string;
-  /**
-   * Asset
-   */
-  linkType: string;
-  id: string;
-}
-/**
- * Brand
- */
-export interface Brand {
-  icon?: AssetLink;
-}
-"
-`;
-
-exports[`Symbol not required 1`] = `
+exports[`All fields 1`] = `
 "/**
  * This file was automatically generated.
  * DO NOT MODIFY IT BY HAND.
@@ -35,69 +8,37 @@ exports[`Symbol not required 1`] = `
 
 
 /**
- * Brand
+ * All the fields and widgets
  */
-export interface Brand {
-  companyName?: string;
+export interface AllTheFieldsAndWidgets {
+  singleLine?: string;
+  multipleLine?: string;
+  markdown?: string;
+  radio?: string;
+  dropdown?: string;
+  symbol?: string;
+  slug?: string;
+  url?: string;
+  youtube?: string;
+  ooyala?: string;
+  kaltura?: string;
+  number?: number;
+  rating?: number;
+  decimal?: number;
+  bool?: boolean;
+  date?: string;
+  location?: Location;
+  entry?: EntryLink;
+  asset?: AssetLink;
+  object?: {
+    [k: string]: any;
+  };
+  entryCards?: EntryLink[];
+  entries?: EntryLink[];
+  assetGallery?: AssetLink[];
+  assets?: AssetLink[];
+  symbols?: string[];
 }
-"
-`;
-
-exports[`Symbol required 1`] = `
-"/**
- * This file was automatically generated.
- * DO NOT MODIFY IT BY HAND.
- */
-
-
-/**
- * Brand
- */
-export interface Brand {
-  companyName: string;
-}
-"
-`;
-
-exports[`Text not required 1`] = `
-"/**
- * This file was automatically generated.
- * DO NOT MODIFY IT BY HAND.
- */
-
-
-/**
- * Brand
- */
-export interface Brand {
-  companyName?: string;
-}
-"
-`;
-
-exports[`Text required 1`] = `
-"/**
- * This file was automatically generated.
- * DO NOT MODIFY IT BY HAND.
- */
-
-
-/**
- * Brand
- */
-export interface Brand {
-  companyName: string;
-}
-"
-`;
-
-exports[`all fields 1`] = `
-"/**
- * This file was automatically generated.
- * DO NOT MODIFY IT BY HAND.
- */
-
-
 export interface Location {
   /**
    * Longitude
@@ -130,37 +71,21 @@ export interface AssetLink {
   linkType: string;
   id: string;
 }
-/**
- * All the fields and widgets
+"
+`;
+
+exports[`Content Type with omitted field 1`] = `
+"/**
+ * This file was automatically generated.
+ * DO NOT MODIFY IT BY HAND.
  */
-export interface AllTheFieldsAndWidgets {
-  singleLine?: string;
+
+
+/**
+ * Model With Omitted Field
+ */
+export interface ModelWithOmittedField {
   multipleLine?: string;
-  markdown?: string;
-  radio?: string;
-  dropdown?: string;
-  symbol?: string;
-  slug?: string;
-  url?: string;
-  youtube?: string;
-  ooyala?: string;
-  kaltura?: string;
-  number?: number;
-  rating?: number;
-  decimal?: number;
-  bool?: boolean;
-  date?: string;
-  location?: Location;
-  entry?: EntryLink;
-  asset?: AssetLink;
-  object?: {
-    [k: string]: any;
-  };
-  entryCards?: EntryLink[];
-  entries?: EntryLink[];
-  assetGallery?: AssetLink[];
-  assets?: AssetLink[];
-  symbols?: string[];
 }
 "
 `;
