@@ -3,7 +3,7 @@
 This is a tool to convert Contentful Models (Content Types) to the TS Definitions.
 Provides a way to automate TS Definitions generation. Could be used as a library or cli tool.
 
-
+[Try-it-out](https://content-type-to-typescript.netlify.com/)
 
 ## Installation
 
