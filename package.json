@@ -1,8 +1,21 @@
 {
   "name": "content-type-to-typescript",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Compile Contentful Models to TypeScript type definitions",
+  "keywords": [
+    "contentful",
+    "schema",
+    "model",
+    "content-type",
+    "contentType",
+    "typescript",
+    "compile",
+    "transpile",
+    "api",
+    "interface",
+    "typing",
+    "definition"
+  ],
   "main": "dist/content-type-to-typescript.es5.js",
   "bin": "dist/bin/content-type-to-typescript",
   "typings": "dist/types/content-type-to-typescript.d.ts",
