@@ -1,11 +1,619 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`All fields 1`] = `
+exports[`100 content types 1`] = `
 "/**
  * This file was automatically generated.
  * DO NOT MODIFY IT BY HAND.
  */
 
+/**
+ * ContentType0a
+ */
+export interface ContentType0A {
+  singleLine?: string;
+}
+/**
+ * ContentType10a
+ */
+export interface ContentType10A {
+  singleLine?: string;
+}
+/**
+ * ContentType11a
+ */
+export interface ContentType11A {
+  singleLine?: string;
+}
+/**
+ * ContentType12a
+ */
+export interface ContentType12A {
+  singleLine?: string;
+}
+/**
+ * ContentType13a
+ */
+export interface ContentType13A {
+  singleLine?: string;
+}
+/**
+ * ContentType14a
+ */
+export interface ContentType14A {
+  singleLine?: string;
+}
+/**
+ * ContentType15a
+ */
+export interface ContentType15A {
+  singleLine?: string;
+}
+/**
+ * ContentType16a
+ */
+export interface ContentType16A {
+  singleLine?: string;
+}
+/**
+ * ContentType17a
+ */
+export interface ContentType17A {
+  singleLine?: string;
+}
+/**
+ * ContentType18a
+ */
+export interface ContentType18A {
+  singleLine?: string;
+}
+/**
+ * ContentType19a
+ */
+export interface ContentType19A {
+  singleLine?: string;
+}
+/**
+ * ContentType1a
+ */
+export interface ContentType1A {
+  singleLine?: string;
+}
+/**
+ * ContentType20a
+ */
+export interface ContentType20A {
+  singleLine?: string;
+}
+/**
+ * ContentType21a
+ */
+export interface ContentType21A {
+  singleLine?: string;
+}
+/**
+ * ContentType22a
+ */
+export interface ContentType22A {
+  singleLine?: string;
+}
+/**
+ * ContentType23a
+ */
+export interface ContentType23A {
+  singleLine?: string;
+}
+/**
+ * ContentType24a
+ */
+export interface ContentType24A {
+  singleLine?: string;
+}
+/**
+ * ContentType25a
+ */
+export interface ContentType25A {
+  singleLine?: string;
+}
+/**
+ * ContentType26a
+ */
+export interface ContentType26A {
+  singleLine?: string;
+}
+/**
+ * ContentType27a
+ */
+export interface ContentType27A {
+  singleLine?: string;
+}
+/**
+ * ContentType28a
+ */
+export interface ContentType28A {
+  singleLine?: string;
+}
+/**
+ * ContentType29a
+ */
+export interface ContentType29A {
+  singleLine?: string;
+}
+/**
+ * ContentType2a
+ */
+export interface ContentType2A {
+  singleLine?: string;
+}
+/**
+ * ContentType30a
+ */
+export interface ContentType30A {
+  singleLine?: string;
+}
+/**
+ * ContentType31a
+ */
+export interface ContentType31A {
+  singleLine?: string;
+}
+/**
+ * ContentType32a
+ */
+export interface ContentType32A {
+  singleLine?: string;
+}
+/**
+ * ContentType33a
+ */
+export interface ContentType33A {
+  singleLine?: string;
+}
+/**
+ * ContentType34a
+ */
+export interface ContentType34A {
+  singleLine?: string;
+}
+/**
+ * ContentType35a
+ */
+export interface ContentType35A {
+  singleLine?: string;
+}
+/**
+ * ContentType36a
+ */
+export interface ContentType36A {
+  singleLine?: string;
+}
+/**
+ * ContentType37a
+ */
+export interface ContentType37A {
+  singleLine?: string;
+}
+/**
+ * ContentType38a
+ */
+export interface ContentType38A {
+  singleLine?: string;
+}
+/**
+ * ContentType39a
+ */
+export interface ContentType39A {
+  singleLine?: string;
+}
+/**
+ * ContentType3a
+ */
+export interface ContentType3A {
+  singleLine?: string;
+}
+/**
+ * ContentType40a
+ */
+export interface ContentType40A {
+  singleLine?: string;
+}
+/**
+ * ContentType41a
+ */
+export interface ContentType41A {
+  singleLine?: string;
+}
+/**
+ * ContentType42a
+ */
+export interface ContentType42A {
+  singleLine?: string;
+}
+/**
+ * ContentType43a
+ */
+export interface ContentType43A {
+  singleLine?: string;
+}
+/**
+ * ContentType44a
+ */
+export interface ContentType44A {
+  singleLine?: string;
+}
+/**
+ * ContentType45a
+ */
+export interface ContentType45A {
+  singleLine?: string;
+}
+/**
+ * ContentType46a
+ */
+export interface ContentType46A {
+  singleLine?: string;
+}
+/**
+ * ContentType47a
+ */
+export interface ContentType47A {
+  singleLine?: string;
+}
+/**
+ * ContentType48a
+ */
+export interface ContentType48A {
+  singleLine?: string;
+}
+/**
+ * ContentType49a
+ */
+export interface ContentType49A {
+  singleLine?: string;
+}
+/**
+ * ContentType4a
+ */
+export interface ContentType4A {
+  singleLine?: string;
+}
+/**
+ * ContentType50a
+ */
+export interface ContentType50A {
+  singleLine?: string;
+}
+/**
+ * ContentType51a
+ */
+export interface ContentType51A {
+  singleLine?: string;
+}
+/**
+ * ContentType52a
+ */
+export interface ContentType52A {
+  singleLine?: string;
+}
+/**
+ * ContentType53a
+ */
+export interface ContentType53A {
+  singleLine?: string;
+}
+/**
+ * ContentType54a
+ */
+export interface ContentType54A {
+  singleLine?: string;
+}
+/**
+ * ContentType55a
+ */
+export interface ContentType55A {
+  singleLine?: string;
+}
+/**
+ * ContentType56a
+ */
+export interface ContentType56A {
+  singleLine?: string;
+}
+/**
+ * ContentType57a
+ */
+export interface ContentType57A {
+  singleLine?: string;
+}
+/**
+ * ContentType58a
+ */
+export interface ContentType58A {
+  singleLine?: string;
+}
+/**
+ * ContentType59a
+ */
+export interface ContentType59A {
+  singleLine?: string;
+}
+/**
+ * ContentType5a
+ */
+export interface ContentType5A {
+  singleLine?: string;
+}
+/**
+ * ContentType60a
+ */
+export interface ContentType60A {
+  singleLine?: string;
+}
+/**
+ * ContentType61a
+ */
+export interface ContentType61A {
+  singleLine?: string;
+}
+/**
+ * ContentType62a
+ */
+export interface ContentType62A {
+  singleLine?: string;
+}
+/**
+ * ContentType63a
+ */
+export interface ContentType63A {
+  singleLine?: string;
+}
+/**
+ * ContentType64a
+ */
+export interface ContentType64A {
+  singleLine?: string;
+}
+/**
+ * ContentType65a
+ */
+export interface ContentType65A {
+  singleLine?: string;
+}
+/**
+ * ContentType66a
+ */
+export interface ContentType66A {
+  singleLine?: string;
+}
+/**
+ * ContentType67a
+ */
+export interface ContentType67A {
+  singleLine?: string;
+}
+/**
+ * ContentType68a
+ */
+export interface ContentType68A {
+  singleLine?: string;
+}
+/**
+ * ContentType69a
+ */
+export interface ContentType69A {
+  singleLine?: string;
+}
+/**
+ * ContentType6a
+ */
+export interface ContentType6A {
+  singleLine?: string;
+}
+/**
+ * ContentType70a
+ */
+export interface ContentType70A {
+  singleLine?: string;
+}
+/**
+ * ContentType71a
+ */
+export interface ContentType71A {
+  singleLine?: string;
+}
+/**
+ * ContentType72a
+ */
+export interface ContentType72A {
+  singleLine?: string;
+}
+/**
+ * ContentType73a
+ */
+export interface ContentType73A {
+  singleLine?: string;
+}
+/**
+ * ContentType74a
+ */
+export interface ContentType74A {
+  singleLine?: string;
+}
+/**
+ * ContentType75a
+ */
+export interface ContentType75A {
+  singleLine?: string;
+}
+/**
+ * ContentType76a
+ */
+export interface ContentType76A {
+  singleLine?: string;
+}
+/**
+ * ContentType77a
+ */
+export interface ContentType77A {
+  singleLine?: string;
+}
+/**
+ * ContentType78a
+ */
+export interface ContentType78A {
+  singleLine?: string;
+}
+/**
+ * ContentType79a
+ */
+export interface ContentType79A {
+  singleLine?: string;
+}
+/**
+ * ContentType7a
+ */
+export interface ContentType7A {
+  singleLine?: string;
+}
+/**
+ * ContentType80a
+ */
+export interface ContentType80A {
+  singleLine?: string;
+}
+/**
+ * ContentType81a
+ */
+export interface ContentType81A {
+  singleLine?: string;
+}
+/**
+ * ContentType82a
+ */
+export interface ContentType82A {
+  singleLine?: string;
+}
+/**
+ * ContentType83a
+ */
+export interface ContentType83A {
+  singleLine?: string;
+}
+/**
+ * ContentType84a
+ */
+export interface ContentType84A {
+  singleLine?: string;
+}
+/**
+ * ContentType85a
+ */
+export interface ContentType85A {
+  singleLine?: string;
+}
+/**
+ * ContentType86a
+ */
+export interface ContentType86A {
+  singleLine?: string;
+}
+/**
+ * ContentType87a
+ */
+export interface ContentType87A {
+  singleLine?: string;
+}
+/**
+ * ContentType88a
+ */
+export interface ContentType88A {
+  singleLine?: string;
+}
+/**
+ * ContentType89a
+ */
+export interface ContentType89A {
+  singleLine?: string;
+}
+/**
+ * ContentType8a
+ */
+export interface ContentType8A {
+  singleLine?: string;
+}
+/**
+ * ContentType90a
+ */
+export interface ContentType90A {
+  singleLine?: string;
+}
+/**
+ * ContentType91a
+ */
+export interface ContentType91A {
+  singleLine?: string;
+}
+/**
+ * ContentType92a
+ */
+export interface ContentType92A {
+  singleLine?: string;
+}
+/**
+ * ContentType93a
+ */
+export interface ContentType93A {
+  singleLine?: string;
+}
+/**
+ * ContentType94a
+ */
+export interface ContentType94A {
+  singleLine?: string;
+}
+/**
+ * ContentType95a
+ */
+export interface ContentType95A {
+  singleLine?: string;
+}
+/**
+ * ContentType96a
+ */
+export interface ContentType96A {
+  singleLine?: string;
+}
+/**
+ * ContentType97a
+ */
+export interface ContentType97A {
+  singleLine?: string;
+}
+/**
+ * ContentType98a
+ */
+export interface ContentType98A {
+  singleLine?: string;
+}
+/**
+ * ContentType99a
+ */
+export interface ContentType99A {
+  singleLine?: string;
+}
+/**
+ * ContentType9a
+ */
+export interface ContentType9A {
+  singleLine?: string;
+}
+"
+`;
+
+exports[`All fields 1`] = `
+"/**
+ * This file was automatically generated.
+ * DO NOT MODIFY IT BY HAND.
+ */
 
 /**
  * All the fields and widgets
@@ -80,12 +688,106 @@ exports[`Content Type with omitted field 1`] = `
  * DO NOT MODIFY IT BY HAND.
  */
 
-
 /**
  * Model With Omitted Field
  */
 export interface ModelWithOmittedField {
   multipleLine?: string;
+}
+"
+`;
+
+exports[`Multiple types 1`] = `
+"/**
+ * This file was automatically generated.
+ * DO NOT MODIFY IT BY HAND.
+ */
+
+/**
+ * Author
+ */
+export interface Author {
+  name?: string;
+  twitterHandle?: string;
+  profilePhoto?: AssetLink;
+  biography?: string;
+  createdEntries?: EntryLink[];
+}
+export interface AssetLink {
+  /**
+   * Link
+   */
+  type: string;
+  /**
+   * Asset
+   */
+  linkType: string;
+  id: string;
+}
+export interface EntryLink {
+  /**
+   * Link
+   */
+  type: string;
+  /**
+   * Entry
+   */
+  linkType: string;
+  id: string;
+}
+/**
+ * Image
+ */
+export interface Image {
+  title: string;
+  photo?: AssetLink;
+  imageCaption?: string;
+  imageCredits?: string;
+}
+/**
+ * Photo Gallery
+ */
+export interface PhotoGallery {
+  title: string;
+  slug?: string;
+  author: EntryLink;
+  coverImage?: AssetLink;
+  description?: string;
+  images?: EntryLink[];
+  tags?: string[];
+  date?: string;
+  location?: Location;
+}
+export interface Location {
+  /**
+   * Longitude
+   */
+  lon: number;
+  /**
+   * Latitude
+   */
+  lat: number;
+}
+"
+`;
+
+exports[`Multiple types with non unique field id 1`] = `
+"/**
+ * This file was automatically generated.
+ * DO NOT MODIFY IT BY HAND.
+ */
+
+/**
+ * Post
+ */
+export interface Post {
+  title?: string;
+}
+/**
+ * Post 2
+ */
+export interface Post2 {
+  title?: string;
 }
 "
 `;

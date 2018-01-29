@@ -1,4 +1,5 @@
 import { ContentType, Field } from 'contentful/index';
+import { JSONSchema4 } from 'json-schema';
 import { compile, Options } from 'json-schema-to-typescript';
 import { chain, defaults, fromPairs, get, orderBy } from 'lodash';
 import { buildRef, getByRef } from './built-in-definitions';
@@ -26,14 +27,19 @@ export async function compileFromContentTypes(
   );
 
   const resultSchema = {
-    anyOf: allDefinitions.map((def) => ({ $ref: buildRef(def) })),
+    title: 'EphemeralContentfulSchemaRoot1',
+    type: 'object',
+    properties: chain(allDefinitions)
+      .map((def) => [def.title, { $ref: buildRef(def) }])
+      .fromPairs()
+      .value(),
     definitions: chain(allDefinitions)
       .map((def) => [def.title, def])
       .fromPairs()
       .value(),
   };
 
-  const res = await compile(resultSchema, EPHEMERAL_ROOT, settings);
+  const res = await compile(resultSchema as JSONSchema4, EPHEMERAL_ROOT, settings);
 
   return cleanupEphemeralRoot(res);
 }
@@ -41,7 +47,7 @@ export async function compileFromContentTypes(
 const EPHEMERAL_ROOT = 'EphemeralContentfulSchemaRoot1';
 
 function cleanupEphemeralRoot(input: string): string {
-  return input.replace(new RegExp(`\n.+${EPHEMERAL_ROOT}.+`, 'gm'), '');
+  return input.replace(new RegExp(`.+${EPHEMERAL_ROOT}.+[^{\}]+(?=}).+\n+`, 'gm'), '');
 }
 
 function getRefs(definition: JSONSchema): JSONSchema[] {

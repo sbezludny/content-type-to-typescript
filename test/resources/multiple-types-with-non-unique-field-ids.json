@@ -1,0 +1,34 @@
+[
+  {
+    "displayField": "title",
+    "name": "Post",
+    "description": "",
+    "fields": [
+      {
+        "id": "title",
+        "name": "Title",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "disabled": false,
+        "omitted": false
+      }
+    ]
+  },
+  {
+    "displayField": "title",
+    "name": "Post 2",
+    "description": "",
+    "fields": [
+      {
+        "id": "title",
+        "name": "Title",
+        "type": "Symbol",
+        "localized": false,
+        "required": false,
+        "disabled": false,
+        "omitted": false
+      }
+    ]
+  }
+]
