@@ -24,7 +24,7 @@ This command will generate TS Definition file. Could also be used as a npm scrip
 package.json:
 ```json
 "scripts": {
-  "sync-contentful-types": "content-type-typescript --access-token <token> --space <space> --output <filepath>"
+  "sync-contentful-types": "content-type-to-typescript --access-token <token> --space <space> --output <filepath>"
 }
 ```
 Usage:
