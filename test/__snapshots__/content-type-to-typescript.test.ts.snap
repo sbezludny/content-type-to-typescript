@@ -648,34 +648,16 @@ export interface AllTheFieldsAndWidgets {
   symbols?: string[];
 }
 export interface Location {
-  /**
-   * Longitude
-   */
   lon: number;
-  /**
-   * Latitude
-   */
   lat: number;
 }
 export interface EntryLink {
-  /**
-   * Link
-   */
   type: string;
-  /**
-   * Entry
-   */
   linkType: string;
   id: string;
 }
 export interface AssetLink {
-  /**
-   * Link
-   */
   type: string;
-  /**
-   * Asset
-   */
   linkType: string;
   id: string;
 }
@@ -714,24 +696,12 @@ export interface Author {
   createdEntries?: EntryLink[];
 }
 export interface AssetLink {
-  /**
-   * Link
-   */
   type: string;
-  /**
-   * Asset
-   */
   linkType: string;
   id: string;
 }
 export interface EntryLink {
-  /**
-   * Link
-   */
   type: string;
-  /**
-   * Entry
-   */
   linkType: string;
   id: string;
 }
@@ -759,13 +729,7 @@ export interface PhotoGallery {
   location?: Location;
 }
 export interface Location {
-  /**
-   * Longitude
-   */
   lon: number;
-  /**
-   * Latitude
-   */
   lat: number;
 }
 "

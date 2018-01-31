@@ -6,13 +6,13 @@ export const Location: JSONSchema = {
   properties: {
     lon: {
       type: 'number',
-      description: 'Longitude',
+      description: '',
       additionalProperties: false,
       required: [],
     },
     lat: {
       type: 'number',
-      description: 'Latitude',
+      description: '',
       additionalProperties: false,
       required: [],
     },
@@ -26,13 +26,13 @@ export const AssetLink: JSONSchema = {
   properties: {
     type: {
       type: 'string',
-      description: 'Link',
+      description: '',
       additionalProperties: false,
       required: [],
     },
     linkType: {
       type: 'string',
-      description: 'Asset',
+      description: '',
       additionalProperties: false,
       required: [],
     },
@@ -51,13 +51,13 @@ export const EntryLink: JSONSchema = {
   properties: {
     type: {
       type: 'string',
-      description: 'Link',
+      description: '',
       additionalProperties: false,
       required: [],
     },
     linkType: {
       type: 'string',
-      description: 'Entry',
+      description: '',
       additionalProperties: false,
       required: [],
     },
