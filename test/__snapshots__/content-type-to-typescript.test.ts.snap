@@ -615,9 +615,6 @@ exports[`All fields 1`] = `
  * DO NOT MODIFY IT BY HAND.
  */
 
-/**
- * All the fields and widgets
- */
 export interface AllTheFieldsAndWidgets {
   singleLine?: string;
   multipleLine?: string;
@@ -670,9 +667,6 @@ exports[`Content Type with omitted field 1`] = `
  * DO NOT MODIFY IT BY HAND.
  */
 
-/**
- * Model With Omitted Field
- */
 export interface ModelWithOmittedField {
   multipleLine?: string;
 }
@@ -685,9 +679,6 @@ exports[`Multiple types 1`] = `
  * DO NOT MODIFY IT BY HAND.
  */
 
-/**
- * Author
- */
 export interface Author {
   name?: string;
   twitterHandle?: string;
@@ -705,18 +696,12 @@ export interface EntryLink {
   linkType: string;
   id: string;
 }
-/**
- * Image
- */
 export interface Image {
   title: string;
   photo?: AssetLink;
   imageCaption?: string;
   imageCredits?: string;
 }
-/**
- * Photo Gallery
- */
 export interface PhotoGallery {
   title: string;
   slug?: string;
@@ -741,17 +726,26 @@ exports[`Multiple types with non unique field id 1`] = `
  * DO NOT MODIFY IT BY HAND.
  */
 
-/**
- * Post
- */
 export interface Post {
   title?: string;
 }
-/**
- * Post 2
- */
 export interface Post2 {
   title?: string;
+}
+"
+`;
+
+exports[`Parse descirption 1`] = `
+"/**
+ * This file was automatically generated.
+ * DO NOT MODIFY IT BY HAND.
+ */
+
+/**
+ * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+ */
+export interface ModelWithOmittedField {
+  multipleLine?: string;
 }
 "
 `;

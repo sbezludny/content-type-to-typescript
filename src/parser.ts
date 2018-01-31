@@ -93,7 +93,7 @@ function transformFields(contentTypeInfo: Partial<ContentType>): JSONSchema {
 export function convertToJSONSchema(contentTypeInfo: Partial<ContentType>): JSONSchema {
   const resultSchema: JSONSchema = {
     title: contentTypeInfo.name,
-    description: contentTypeInfo.description || contentTypeInfo.name,
+    description: contentTypeInfo.description,
     ...transformFields(contentTypeInfo),
   };
 
