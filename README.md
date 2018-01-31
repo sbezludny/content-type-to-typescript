@@ -16,7 +16,7 @@ $ npm install content-type-to-typescript --save
 1. As CLI 
 
 ```
-$ ./node_modules/.bin/content-type-typescript --access-token <token> --space <space> --output <filepath>
+$ ./node_modules/.bin/content-type-to-typescript --access-token <token> --space <space> --output <filepath>
 ```
 
 This command will generate TS Definition file. Could also be used as a npm script.
